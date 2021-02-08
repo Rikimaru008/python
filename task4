@@ -1,0 +1,15 @@
+str1 = input("введите первое слово:")
+str2 = input("введите второе слово:")
+result1 = ''
+result2 = ''
+maxlen=len(str2) if len(str1)<len(str2) else len(str1)
+for i in range(maxlen):
+  letter1=str1[i:i+1]
+  letter2=str2[i:i+1]
+  if letter1 != letter2:
+    if  letter2 != '*' : 
+        result1=1
+if result1==1:
+    print ("КО")
+else:
+        print ("ОК")
